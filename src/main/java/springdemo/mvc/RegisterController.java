@@ -48,23 +48,17 @@ public class RegisterController {
     //     return "blank";
     // }
 
-    //Method 3 - Binding Object
-    //Instantiate an empty object and pass it to the model. Upon filling in form data and clicking submit, Spring will call
-    //setter methods to bind the form data to the object. 
-    // @GetMapping
-    // public String registrationPage(Model model){
-    //     Person person = new Person();
-    //     model.addAttribute("person", person);
-    //     return "registrationPage";
-    // }
-
-    //Retrieve the object using the @ModelAttribute annotation. This Person object should have data bound to it. 
-    // @GetMapping(path = "person")
-    // public String registrationResult(@ModelAttribute Person person){
-    //     System.out.printf("NAME >>> %s\n",person.getName());
-    //     System.out.printf("AGE >>> %s\n",person.getAge());
-    //     System.out.printf("EMAIL >>> %s\n",person.getEmail());
-    //     System.out.printf("OPT IN FOR ADVERTISEMENT? >>> %s",person.getAdvertisementOptIn());
-    //     return "blank";
-    // }
+    // Method 3 - Binding Object
+    // Upon filling in form data and clicking submit, Spring will instantiate an empty Person object and call
+    // setter methods to bind the form data to the object. 
+    // Retrieve the object using the @ModelAttribute annotation. This Person object should have data bound to it. 
+    // NOTE: TO access this controller, visit localhost:8080/register
+//     @GetMapping(path = "person")
+//     public String registrationResult(@ModelAttribute Person person){
+//         System.out.printf("NAME >>> %s\n",person.getName());
+//         System.out.printf("AGE >>> %s\n",person.getAge());
+//         System.out.printf("EMAIL >>> %s\n",person.getEmail());
+//         System.out.printf("OPT IN FOR ADVERTISEMENT? >>> %s",person.getAdvertisementOptIn());
+//         return "blank";
+//     }
 }
